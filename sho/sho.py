@@ -17,12 +17,12 @@ for ipInfo in hosts:
         except:
             string += f'-\t'
             pass
-        # # 국가 확인
-        # try:
-        #     string += f'{ipInfo["country_name"]}\t'
-        # except:
-        #     string += f'-\t'
-        #     pass
+        # 국가 확인
+        try:
+            string += f'{ipInfo["country_name"]}\t'
+        except:
+            string += f'-\t'
+            pass
         # IP 취약점 확인
         try:
             string += f'{str(ipInfo["vulns"])[1:-1]}'
@@ -31,6 +31,5 @@ for ipInfo in hosts:
             pass
     except:
         string = f'{ipInfo} is not result'
-        continue
     # IP Port 확인
     print(string)
