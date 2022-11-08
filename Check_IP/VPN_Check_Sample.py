@@ -30,7 +30,7 @@ class IPQS:
             return {}
 
         url = "https://www.ipqualityscore.com/api/json/ip/%s/%s" %(self.key, ip)
-        x = requests.get(url, params = vars)
+        x = requests.get(url)
         return (json.loads(x.text))
 
 
