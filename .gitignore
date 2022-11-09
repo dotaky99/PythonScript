@@ -10,3 +10,4 @@ ip_list
 ## 폴더 무시
 Lib/
 Scripts/
+Apache/
