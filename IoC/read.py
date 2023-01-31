@@ -1,3 +1,4 @@
+# Python 3.10.4
 import os, datetime, hashlib
 
 def GetFileHash(file):
